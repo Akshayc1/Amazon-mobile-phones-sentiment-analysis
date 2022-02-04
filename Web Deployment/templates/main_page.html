@@ -1,0 +1,48 @@
+<html>
+<body style="background-color: #ffe6e6">
+<style type="text/css">
+    .field1{
+        height: 200;
+        width: 350px;
+        margin-left: 70px;
+    }
+    .label1{
+        /*margin-left: 5px;*/
+        margin-right: 400px;
+        margin-left: 70px;
+        /*margin-top: 10px;*/
+        font-size: 20px;
+    }
+    .button {
+  background-color: #ff3333; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+}
+</style>
+<title>Main Page</title>
+<h1 align="center" style="font-family: sans-serif;margin-top: 35px;margin-right: 100px;font-size: 45px;
+color: #df2020;text-shadow: 1px 2px 1px">Sentiment Analysis Anlayzer</h1>
+<div  style="border-style: double;height: 350px;box-sizing: border-box;width: 700px;margin-left: 300px;border-color:#ff9999;border-radius: 5px;border-width: 5px;box-shadow: 1px 1px 1px 1px #ff9999">
+    <form action = "{{ url_for('prediction') }}" method="post">
+        {{ form.hidden_tag() }}
+        <p  style="padding-top: 30px;padding-left: 70px;text-shadow: 1px 1px 1px #ff6666">
+            {{ form.data1.label(class="label1") }}
+            {{ form.data1(class="field1") }}
+        </p>
+        <p style="padding-top: -5px;padding-left: 230px;text-shadow: 1px 1px 1px #ff6666;">
+            {{ form.submit(class = "button") }}
+        </p>
+    </form>
+</div>
+
+</body>
+</html>

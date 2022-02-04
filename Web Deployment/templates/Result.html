@@ -1,0 +1,20 @@
+<html>
+<body>
+<title>Predictions</title>
+<div  style="border-style: double;height: 170px;box-sizing: border-box;width: 25%;margin-left: 450px;border-color:#  f20d0d;border-radius: 5px;border-width: 5px;margin-top: 70px">
+    <h1 style="padding-left: 20px;color: #00bfff">******Result******</h1>
+<!-- <ul>
+{% for item in data1 %}
+    <p style="padding-top: -50px;color: #ff6666">{{ item }}</p>
+{% endfor %}
+</ul> -->
+
+{% for dict_item in data %}
+   {% for key, value in dict_item.items() %}
+     <h3 style="padding-left: 40px;color: #ff0000;font-size: 25px;">{{value}}</h1>
+      <!-- <h2>Value: {{value}}</h2> -->
+   {% endfor %}
+{% endfor %}
+</div>
+</body>
+</html>
