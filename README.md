@@ -18,3 +18,5 @@ The research I have used machine-learning algorithms to build the models & there
 
 System Development: 
 Flask will be used to develop the Sentiment analysis system. Flask is micro web-framework written in Python. The flash package can be downloaded from Python Package Index (PPI).It is written in Python. By using flask, we will deploy our model as a web application. Our project take reviews from the user which is processed and the predictions were applied on that data and the results are again sent back to the web for the user. The different pages for it is shown below.
+
+![alt text](https://github.com/Akshayc1/Amazon-mobile-phones-sentiment-analysis/issues/1#issue-1124259593)
